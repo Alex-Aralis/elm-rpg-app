@@ -7,5 +7,5 @@ import Html exposing (..)
 view : Model -> Html Action
 view model = 
   div [] [
-    text model
+    text <| toString model
   ]
