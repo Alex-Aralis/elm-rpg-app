@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:Alex-Aralis/elm-rpg-app.git",
   "author": "Alex Aralis <alex.aralis@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.10.0"
+  }
 }
