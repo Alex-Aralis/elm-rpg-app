@@ -1,0 +1,9 @@
+{
+  "name": "elm-rpg-app",
+  "version": "0.0.0",
+  "description": "A learning app for elm.",
+  "main": "index.js",
+  "repository": "git@github.com:Alex-Aralis/elm-rpg-app.git",
+  "author": "Alex Aralis <alex.aralis@gmail.com>",
+  "license": "MIT"
+}
