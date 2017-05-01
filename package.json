@@ -8,5 +8,9 @@
   "license": "MIT",
   "dependencies": {
     "json-server": "^0.10.0"
+  },
+
+  "scripts": {
+    "start": "node api.js"
   }
 }
