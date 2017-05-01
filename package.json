@@ -18,7 +18,7 @@
   },
   "scripts": {
     "api": "node api.js",
-    "dev-server": "webpack-dev-server --port 4000",
+    "dev-server": "webpack-dev-server --port 3000",
     "build": "webpack"
   }
 }
