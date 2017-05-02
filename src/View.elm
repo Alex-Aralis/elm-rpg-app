@@ -7,6 +7,7 @@ import Models exposing (Model, Route(..))
 import Players.Table
 import Players.Edit
 import RemoteData exposing (WebData, RemoteData(..))
+import Routing exposing (playersPath)
 
 view : Model -> Html Action
 view model = 
@@ -25,7 +26,7 @@ nav =
   in 
     div [class "col-12 flex bg-black rounded gray p2 h2"] [
       div [class "flex-auto"] [
-        text "RPG App"
+        a [href playersPath] [text "RPG App"]
       ],
       navItem NoOp "List"
     ]

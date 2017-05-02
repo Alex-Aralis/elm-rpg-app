@@ -5,6 +5,7 @@ import Html.Attributes exposing (..)
 import Actions exposing (Action(..))
 import Models exposing (Player)
 import RemoteData exposing (WebData, RemoteData(..))
+import Routing exposing (playerPath)
 
 view : WebData (List Player) -> Html Action
 view players = 
@@ -44,5 +45,8 @@ playerRow player =
     [
       td [] [ text player.id ],
       td [] [ text player.name ],
-      td [] [ text <| toString player.level ]
+      td [] [ text <| toString player.level ],
+      td [] [ 
+        a [href <| playerPath player.id, class "btn"] [text "Edit"] 
+      ]
     ]
