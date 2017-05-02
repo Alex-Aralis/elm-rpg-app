@@ -6,10 +6,11 @@ import Models exposing (Model, initialModel)
 import Update exposing (update)
 import View exposing (view)
 import Subscriptions exposing (subscriptions)
+import Commands exposing (fetchPlayers) 
 
 init : (Model, Cmd Action)
 init = 
-  (initialModel, Cmd.none)
+  (initialModel, fetchPlayers)
 
 main : Program Never Model Action
 main = program 
