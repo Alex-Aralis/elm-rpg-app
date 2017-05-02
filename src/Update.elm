@@ -2,6 +2,7 @@ module Update exposing (update)
 
 import Models exposing (Model)
 import Actions exposing (Action(..))
+import Routing exposing (parseLocation)
 
 update : Action -> Model -> (Model, Cmd Action)
 update action model = 
@@ -11,3 +12,6 @@ update action model =
 
     OnFetchPlayers resp -> 
       ({ model | players = resp }, Cmd.none)
+
+    OnLocationChange loc -> 
+      ({ model | route = parseLocation loc }, Cmd.none)
