@@ -26,7 +26,7 @@ playersTable res =
     
     Success players ->
       div [] [
-        div [class "col-12 table p2"] [ 
+        div [class "col-12 table my2"] [ 
           thead [class "h3 left-align bg-gray"] [
             tr [] [
               th [] [ text "ID" ],

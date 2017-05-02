@@ -12,6 +12,7 @@ init : (Model, Cmd Action)
 init = 
   (initialModel, fetchPlayers)
 
+
 main : Program Never Model Action
 main = program 
   {
